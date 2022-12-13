@@ -12,6 +12,7 @@ header {
     position: fixed;
     height: 4rem;
     background-color: white;
+    z-index: 1;
 }
 
 nav {
@@ -156,6 +157,7 @@ li {
     align-items: center;
 }
 
+/* CONTEUDO */
 .foto1,
 .foto2,
 .foto3,
@@ -167,17 +169,13 @@ li {
     padding-top: 50px;
 }
 
-.sectionFotos {
-    display: flex;
-    justify-content: center;
-}
-
 .fotos {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
     padding: 0 25px 0 25px;
+    margin-left: 60px;
 }
 
 .textos {
@@ -202,13 +200,91 @@ li {
     font-family: 'Playfair Display', serif;
     font-size: 25px;
     color: white;
+    padding-bottom: 20px;
 }
 
 .textop {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 00;
+    font-weight: 200;
     color: white;
 }
 
-.textoOne {}
+.conteudo1,
+.conteudo2,
+.conteudo3,
+.conteudo4,
+.conteudo5,
+.conteudo6,
+.conteudo7 {
+    width: 45%;
+    position: relative;
+    bottom: 100px;
+}
+
+
+
+.textoOne,
+.textoTwo,
+.textoThree,
+.textoFour,
+.textoFive,
+.textoSix,
+.textoSeven {
+    width: 70%;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    left: 80px;
+    bottom: 120px;
+}
+
+.conteudo1 {
+    width: 45%;
+    height: 120vh;
+    position: relative;
+    bottom: 120px;
+
+}
+
+.conteudo2 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    top: 100px;
+}
+
+.conteudo3 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    bottom: 160px;
+}
+
+.conteudo4 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    top: 70px;
+}
+
+.conteudo5 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    bottom: 150px;
+}
+
+.conteudo6 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    top: 70px;
+
+}
+
+.conteudo7 {
+    width: 45%;
+    height: 110vh;
+    position: relative;
+    bottom: 155px;
+}
