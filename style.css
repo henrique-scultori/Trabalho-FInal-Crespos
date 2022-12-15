@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Playfair+Display:wght@900&display=swap');
 
+/*O fator responsivo do tamanho de tela laptop ficou comprometido*/
 @media(min-width:901px) and (max-width: 1500px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #9767A9;
     }
 
     header {
@@ -90,7 +99,7 @@
     /*MAIN*/
     .primeiraSection {
         background: url(/images/cabeludo2.png);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
@@ -99,7 +108,7 @@
         height: 550px
     }
 
-    .text1 {
+    .texto1PrimeiraSection {
         width: 10%;
         font-family: 'Playfair Display', serif;
         font-size: 40px;
@@ -113,7 +122,7 @@
 
     }
 
-    .text2 {
+    .texto2PrimeiraSection {
         width: 23%;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -180,12 +189,6 @@
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0 25px 0 25px;
-    }
-
-    .textos {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
     }
 
     .textoOne,
@@ -416,7 +419,7 @@
     .cima,
     .direita {
         width: 20px;
-        margin-left: 10px;
+        height: 60px;
     }
 
     button {
@@ -430,6 +433,369 @@
         border: none;
     }
 
-    .cima {
+    .buttonCima {
         cursor: pointer;
     }
+
+    .buttonCima :hover {
+        background-color: #AC95BB;
+        cursor: pointer;
+    }
+
+    .sociaisFooter,
+    .footerMobile,
+    .h2FooterMobile {
+        display: none;
+    }
+}
+
+/*MOBILE*/
+@media(min-width:201px) and (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #9767A9;
+    }
+
+    header {
+        width: 100%;
+        height: 3rem;
+        background-color: white;
+        z-index: 1;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuMobile {
+        width: 12%;
+        height: 3rem;
+        background-color: #9767A9;
+        cursor: pointer;
+    }
+
+    .menuMobileItem {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 5px 0 0 2vw;
+        position: relative;
+        top: 10px;
+        left: 7px;
+    }
+
+    ul,
+    .divList,
+    .divPesquisa,
+    .divSocial {
+        display: none;
+    }
+
+    .logo {
+        width: 4rem;
+        position: relative;
+        right: 31vh
+    }
+
+    .primeiraSection {
+        background: url(/images/cabeludo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 30% 70%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 550px
+    }
+
+    .texto1PrimeiraSection {
+        width: 10%;
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 30vh;
+        top: 17vh;
+
+    }
+
+    .texto2PrimeiraSection {
+        width: 60%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        /*a propriedade font-weight não está sendo aplicada*/
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 12vh;
+        top: 25vh;
+    }
+
+    .segundaSection {
+        width: 100%;
+        background-color: #9767A9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 19rem;
+
+    }
+
+    .texto1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        width: 80%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        /* position: relative;
+        top: 15px; */
+    }
+
+    .texto2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        width: 80%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .terceiraSection {
+        width: 100%;
+    }
+
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5,
+    .foto6,
+    .foto7 {
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .fotos {
+        width: 100%;
+    }
+
+    .foto1 {
+        top: 2rem;
+    }
+
+    .foto2,
+    .foto3,
+    .foto4,
+    .foto5,
+    .foto6,
+    .foto7 {
+        bottom: 6rem;
+    }
+
+    .risco {
+        width: 50vw;
+        position: relative;
+        bottom: 4rem;
+        left: 7rem;
+    }
+
+    .textoOne,
+    .textoTwo,
+    .textoThree,
+    .textoFour,
+    .textoFive,
+    .textoSix,
+    .textoSeven {
+        background-color: #9767A9;
+        width: 35%;
+
+    }
+
+    .textoh2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+    .textop {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        color: white;
+    }
+
+
+    .textoOne,
+    .textoTwo,
+    .textoThree,
+    .textoFour,
+    .textoFive,
+    .textoSix,
+    .textoSeven {
+        width: 100%;
+        padding: 15px 20px 15px 20px;
+        position: relative;
+        bottom: 120px;
+    }
+
+    .galeria {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .galeriaFotos {
+        width: 62%;
+        display: grid;
+        grid-template-areas:
+            'galeria1 galeria2 galeria3'
+            'galeria1 galeria8 galeria8'
+            'galeria7 galeria7 galeria7'
+            'galeria5 galeria10 galeria4'
+            'galeria6 galeria9 galeria4';
+        row-gap: 5px;
+    }
+
+    .galeria1 {
+        grid-area: galeria1;
+        width: 130px;
+        height: 213px;
+    }
+
+    .galeria2 {
+        grid-area: galeria2;
+        width: 65px;
+        position: relative;
+        left: 5px;
+        height: 80px;
+    }
+
+    .galeria3 {
+        grid-area: galeria3;
+        width: 70px;
+        height: 80px;
+    }
+
+    .galeria4 {
+        grid-area: galeria4;
+        width: 110px;
+        height: 250px;
+        position: relative;
+        right: 40px;
+    }
+
+    .galeria5 {
+        grid-area: galeria5;
+        width: 75px;
+        height: 170px;
+    }
+
+    .galeria6 {
+        grid-area: galeria6;
+        width: 75px;
+        height: 75px;
+        position: relative;
+    }
+
+    .galeria7 {
+        grid-area: galeria7;
+        width: 275px;
+    }
+
+    .galeria8 {
+        grid-area: galeria8;
+        width: 140px;
+        position: relative;
+        left: 5px;
+    }
+
+    .galeria9 {
+        grid-area: galeria9;
+        width: 75px;
+        height: 75px;
+        position: relative;
+        right: 47px;
+    }
+
+    .galeria10 {
+        grid-area: galeria10;
+        width: 75px;
+        height: 170px;
+        position: relative;
+        right: 47px;
+    }
+
+    footer {
+        background-color: white;
+        width: 100%;
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .pFooter {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        width: 90%;
+    }
+
+    .divButtons {
+        display: none
+    }
+
+    .footerMobile {
+        width: 100%;
+        order: -1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .sociaisFooter {
+        cursor: pointer;
+    }
+
+    .buttonsMobile {
+        cursor: pointer;
+        position: relative;
+        right: 10px;
+    }
+
+    .h2FooterMobile {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        position: relative;
+        right: 160px;
+
+    }
+}
